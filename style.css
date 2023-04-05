@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url('./assets/bg.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+#score{
+    color: black;
+}
+
+#game-zone{
+    margin-top: 40px;
+}
+
+canvas {
+    border: 4px solid gray;
+    background-color: white
+}

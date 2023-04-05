@@ -15,11 +15,14 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id = "score">
-            <span style="color: blue;">Score:</span><span style="color: darkblue;" id="score_val"></span>
+        <div class="container">
+            <h1 id = "score">
+                <span>Score:</span> <span  id="score_val">0</span>
+            </h1>
+            <div id="game-zone">
+                <canvas id="snake_canvas" height="360px" width="360px"></canvas>
+            </div>
         </div>
-        <canvas id="snake_canvas" height="360px" width="360px" style="border: 1px solid black;"></canvas>
-        
         <script src="./script.js" async defer></script>
     </body>
 </html>

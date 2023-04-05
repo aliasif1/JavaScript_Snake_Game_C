@@ -76,6 +76,7 @@ function Draw(){
         clearInterval(refresh)
         let msg = 'Game Over. Your score: ' + score 
         window.alert(msg)
+        location.reload();
     }
 
     ctx.clearRect(0, 0, canvasel.width, canvasel.height);
@@ -83,16 +84,16 @@ function Draw(){
     //console.log(snake)
     //Draw the snake
     for(let i=0;i<snake.length;i++){
-        ctx.fillStyle = (i==0)?'blue':'green';
+        ctx.fillStyle = (i==0)?'black':'gray';
         ctx.fillRect(snake[i].x,snake[i].y,box,box);
-        ctx.strokeStyle = 'red'
+        ctx.strokeStyle = 'gray'
         ctx.strokeRect(snake[i].x,snake[i].y,box,box);
     }
 
     //Draw the food
-    ctx.fillStyle = 'pink';
+    ctx.fillStyle = 'teal';
     ctx.fillRect(food.x,food.y,box,box);
-    ctx.strokeStyle = 'black';
+    ctx.strokeStyle = 'gray';
     ctx.strokeRect(food.x,food.y,box,box);
 
 
