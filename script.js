@@ -30,6 +30,27 @@ function getDirection(event){
     }
 }
 
+// Add event listeners for mouse clicks 
+
+document.querySelector('.upArrow').addEventListener('click', () => setDirectionViaClick('up'))
+document.querySelector('.leftArrow').addEventListener('click', () => setDirectionViaClick('left'))
+document.querySelector('.rightArrow').addEventListener('click', () => setDirectionViaClick('right'))
+document.querySelector('.downArrow').addEventListener('click', () => setDirectionViaClick('down'))
+function setDirectionViaClick(direction){
+    if (direction === 'left' && d !== 'right'){
+        d = 'left';
+    }
+    else if (direction === 'down' && d != 'down'){
+        d = 'up';
+    }
+    else if (direction === 'right' && d != 'left'){
+        d = 'right';
+    }
+    else if (direction === 'up' && d != 'up'){
+        d = 'down';
+    }
+}
+
 
 
 //function to Create food
